@@ -2,16 +2,7 @@
 
 A REST API demonstrating FastAPI capabilities with JWT authentication, CRUD operations, and best practices.
 
-## Features
-
-- **JWT Authentication** - OAuth2 password flow with Bearer tokens
-- **User Management** - Complete CRUD operations for users
-- **Task Management** - Task creation, updates, and completion tracking
-- **Pydantic Validation** - Strong request/response validation
-- **Pagination & Filtering** - Query parameters for efficient data retrieval
-- **OpenAPI Documentation** - Auto-generated interactive API docs
-
-## Tech Stack
+## Stack
 
 - FastAPI
 - Pydantic
@@ -126,20 +117,4 @@ curl -X POST "http://localhost:8000/tasks/" \
     "title": "Complete project",
     "description": "Finish the FastAPI demo"
   }'
-```
-
-## Project Structure
-
-```
-.
-├── app/
-│   ├── __init__.py
-│   ├── main.py          # FastAPI application and endpoints
-│   ├── auth.py          # JWT authentication logic
-│   └── config.py        # Configuration and settings
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── .env                 # Environment variables (not in git)
-└── README.md
 ```
